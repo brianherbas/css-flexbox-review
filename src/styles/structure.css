@@ -1,0 +1,64 @@
+*{
+
+}
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header{
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1%;
+}
+header h1 {
+    border: 1px solid #04128b;
+    background-color:coral;
+    /*width: 70px;
+    height: 70px;*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHeader, .containerHeader h1 {/* esta clase contiene la clase de abajo (.contenedor h1), pero de forma anidada (para que se entienda)*/
+    /*width: 400px;*/
+    color: white;
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.containerHeader h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+nav{
+    background: rgb(81, 50, 182);
+    /*display: flex;
+    justify-content: flex-start;*/
+}
+ul{
+    padding-inline-start: 0;
+    display: flex;
+    /*justify-content: space-between;*/
+    /*max-width: 25%;*/
+}
+li{
+    display: flex;
+}
+a{
+    color: #eee;
+}
+
