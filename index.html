@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>html-css-review</title>
         <link rel="stylesheet" href="./src/styles/structure.css">
     </head>
     <body>
-
-        <div id="container"> <!--Es una caja(contenedor) pero los elementos dentro de "div"
-            no necesariamente se tiene que relacionar o tener sentido"-->
-
-            <!--<header>
+        <section class="main-container">
+            <div class="header-container">
                 <h1>Título</h1>
-            </header>-->
-
-            <div class="containerHeader">
-                <h1>Título</h1>
-            </div>  
-
-            <nav> <!--Generalmente es usado como contenedor
-                    para los links/botones de la barra de inicio(encabezado superior)-->
+            </div>
+            <nav class="nav-container"> 
                 <ul>
                     <li>
                         <a href="index.html">
@@ -48,44 +41,7 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="clearfix"></div>
-
-            <section id="content"> <!--Es una caja(contenedor) pero los elementos dentro de "section"
-                                        se relacionan o sea tienen sentido"-->
-
-                <article class="article"> <!--Es una caja(contenedor) pero los elementos y el CONTENIDO dentro de "article"
-                    se relacionan o sea tienen sentido entre sí"-->
-                    <h2>Título del artículo</h2>
-                    <p>Texto del artículo</p>
-                </article>
-                <article class="article">
-                    <h2>Título del artículo</h2>
-                    <p>Texto del artículo</p>
-                </article>
-                <article class="article">
-                    <h2>Título del artículo</h2>
-                    <p>Texto del artículo</p>
-                </article>
-                <article class="article">
-                    <h2>Título del artículo</h2>
-                    <p>Texto del artículo</p>
-                </article>
-            </section>
-
-            <aside> <!--Es lo mismo, una caja(contenedor) pero semánticamente significa una barra lateral-->
-                <h2>Barra lateral</h2>
-                <form>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
-                </form>
-            </aside>
-
-            <div class="clearfix"></div>
-
-            <footer>
-                Brian Herbas Montero &copy; 2022
-            </footer>
-        </div>
+        </section>
+        
     </body>
 </html>
