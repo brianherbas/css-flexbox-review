@@ -26,7 +26,7 @@ body {
     margin: 0px auto;
     height: 100px;
     width: 100%;
-    font-size: calc(0.75em + 1vmin);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ body {
 }
 .nav-container li {
     padding-left: 20px;
-    font-size: calc(0.75em + 1vmin);
+    
     list-style: none;
 }
 .nav-container li:first-child {
@@ -62,7 +62,6 @@ body {
 
 .main-content-container {
     /*border: 4px solid rgb(221, 14, 169);*/
-    /*height: 500px;*/
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap-reverse;
@@ -70,8 +69,8 @@ body {
 .main-section-info-container {
     /*border: 3px solid rgb(6, 10, 247);*/
     background: green;
-    display: flex;
     min-height: 500px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -80,28 +79,15 @@ body {
 .section-info-container {
     color: white;
     /*border: 4px solid rgb(1, 255, 179);*/
-    /*flex-grow: 1;*/
     margin-top: 40px;
     width: 95%;
-    
-    /*height: 80%;*/
     display: flex;
-    
-    /*flex-wrap: wrap;*/
     flex-direction: column;
-    
-    /*align-items: flex-start;
-    justify-content: center;*/
 }
 .section-info-container article {
-    /*margin-top: 15px;
-    /*margin-bottom: 15px;
-    padding-bottom: 10px;*/
-    margin: 15px;
-    /*font-size: calc(0.75em + 1vmin); CUIDADO ACÁ PORQUE ROMPE EN ESTE CASO*/
     border-bottom: 1px solid #eee;
-    /*display: flex;
-    flex-direction: column;*/
+    margin: 15px;
+    
 }
 .section-info-container article:first-child {
     border-top: 1px solid #eee;
@@ -110,10 +96,10 @@ body {
     
 }
 .aside-container {
-    background: orange;
-    font-size: calc(0.75em + 1vmin);
-    padding: 15px;
     /*border: 3px solid rgb(31, 231, 221);*/
+    background: orange;
+    
+    padding: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -121,6 +107,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*Importante*/
 @media (max-device-width: 455px) { /*max-device-width para responsive mobile device*/
     .aside-container {
         width: 100%;
@@ -133,56 +121,14 @@ body {
         margin-bottom: 15px;
     }
 }
+/*Importante*/
 
 .footer-container {
     background: black;
     color: white;
     margin-top: 15px;
     height: 50px;
-    /*text-align: center;
-    line-height: 50px;*/
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-/*@media (max-width: 282px) {
-	.aside-container {
-        display: flex;
-        flex-direction: column;
-		margin-bottom: 15px;
-        width: 100%;
-        height: 70px;
-	}
-}*/
-
-
-
-
-
-
-
-
-
-
-/*nav{
-    background: rgb(81, 50, 182);
-    margin-top: 15px;
-}
-ul{*/
-    /*padding-inline-start: 0;*/
-    /*display: flex;
-    flex-direction: row;*/
-    /*display: flex;
-    justify-content: flex-start;*/
-    
-/*}*/
-/*li{
-    margin: 10px;
-    list-style: none;
-
-}
-a{
-    color: #eee;
-}*/
-
