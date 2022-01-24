@@ -26,7 +26,7 @@ body {
     margin: 0px auto;
     height: 100px;
     width: 100%;
-    
+    font-size: calc(0.75em + 1vmin);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ body {
 }
 .nav-container li {
     padding-left: 20px;
-    
+    font-size: calc(0.75em + 1vmin);
     list-style: none;
 }
 .nav-container li:first-child {
@@ -87,7 +87,7 @@ body {
 .section-info-container article {
     border-bottom: 1px solid #eee;
     margin: 15px;
-    
+    /*font-size: calc(0.75em + 1vmin); CUIDADO ACÁ PORQUE ROMPE EN ESTE CASO*/
 }
 .section-info-container article:first-child {
     border-top: 1px solid #eee;
@@ -98,7 +98,7 @@ body {
 .aside-container {
     /*border: 3px solid rgb(31, 231, 221);*/
     background: orange;
-    
+    font-size: calc(0.75em + 1vmin);
     padding: 15px;
     display: flex;
     flex-direction: column;
