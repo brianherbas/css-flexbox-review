@@ -79,7 +79,10 @@ body {
     flex-grow: 1;
 
     background: green;
-    min-height: 500px;
+    min-height: 500px; /* Si se usa solo la propiedad "height" entonces se limita a 500px y si el contenido sigue 
+    aumentando el container "green" no va a aumentar proporcionalmete al contenido en cambio con "min-height" unicamente 
+    le decimos que el container "green" tenga como inicio minimo 500px aunque no tenga contenido dentro   */
+    
     /*border: 3px solid rgb(6, 10, 247);*/
 }
 .section-info-container {
