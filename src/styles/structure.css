@@ -66,17 +66,37 @@ body {
 
 .main-content-container {
     display: flex;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
     
     margin-top: 15px;
     /*border: 4px solid rgb(221, 14, 169);*/
 }
+@media (max-device-width: 472px) { /*max-device-width para responsive mobile device*/
+    .main-content-container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        margin-top: 15px;
+
+    }
+}
+@media (max-width: 472px) { /*max-device-width para responsive mobile device*/
+    .main-content-container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        margin-top: 15px;
+
+    }
+}
+
 .main-section-info-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
+    flex-basis: 866.172px; /* flex-grow: 1; */ /* Con esta "flex-grow" rompe cuando crece el contenido horizontalmente */
 
     background: green;
     min-height: 500px; /* Si se usa solo la propiedad "height" entonces se limita a 500px y si el contenido sigue 
@@ -91,22 +111,27 @@ body {
     
     color: white;
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 95%;
     /*border: 4px solid rgb(1, 255, 179);*/
 }
 .section-info-container article {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
     border-bottom: 1px solid #eee;
-    margin: 15px;
+    margin-top: 20px;
     /*font-size: calc(0.75em + 1vmin); CUIDADO ACÁ PORQUE ROMPE EN ESTE CASO*/
 }
 .section-info-container article:first-child {
     border-top: 1px solid #eee;
     padding-top: 25px;
-    margin: 15px;
+    margin-top: 20px;
 }
 .aside-container {
     display: flex;
     flex-direction: column;
+    width: 20%;
 
     background: orange;
     font-size: calc(0.75em + 1vmin);
@@ -119,7 +144,7 @@ body {
 }
 
 /*Importante*/
-@media (max-device-width: 455px) { /*max-device-width para responsive mobile device*/
+@media (max-device-width: 472px) { /*max-device-width para responsive mobile device*/
     .aside-container {
         width: 100%;
         margin-bottom: 15px;
