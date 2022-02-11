@@ -80,7 +80,7 @@ body {
 
     }
 }
-@media (max-width: 472px) { /*max-device-width para responsive mobile device*/
+@media (max-width: 472px) { /*max-width para responsive desktop device*/
     .main-content-container {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -97,6 +97,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-basis: 866.172px; /* flex-grow: 1; */ /* Con esta "flex-grow" rompe cuando crece el contenido horizontalmente */
+                            /* width: 866.172px; */ /* Con esta "width" rompe cuando crece el contenido horizontalmente */
 
     background: green;
     min-height: 500px; /* Si se usa solo la propiedad "height" entonces se limita a 500px y si el contenido sigue 
@@ -131,7 +132,7 @@ body {
 .aside-container {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    flex-basis: 20%;
 
     background: orange;
     font-size: calc(0.75em + 1vmin);
