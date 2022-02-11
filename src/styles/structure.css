@@ -147,13 +147,13 @@ body {
 /*Importante*/
 @media (max-device-width: 472px) { /*max-device-width para responsive mobile device*/
     .aside-container {
-        width: 100%;
+        flex-basis: 100%;
         margin-bottom: 15px;
     }
 }
 @media (max-width: 472px) { /*max-width para responsive desktop device*/
     .aside-container {
-        width: 100%;
+        flex-basis: 100%;
         margin-bottom: 15px;
     }
 }
